@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=DM+Serif+Text:ital@0;1&family=Funnel+Display:wght@300..800&family=Lobster&family=Meddon&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Yesteryear&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: 'Roboto Mono', monospace;
+    background-color: black;
+    position: relative;
+    z-index: 1;
+    scroll-behavior: smooth;
+    animation-timeline: scroll();
+
+}
+
+body {
+    animation: smoothPage 1.0s ease forwards;
+    animation-timeline: view (10% 5%);
+}
+
+
+.burger {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.burger div {
+    width: 100%;
+    height: 4px;
+    background-color: #bab2b2;
+    transition: all 0.3s ease;
+}
+
+
+.menu {
+    margin-top: 60px;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 40%;
+    height: 80%;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+    display: flex;
+    z-index: 100;
+}
+
+.menu.active {
+    left: 0;
+}
+
+.menu-left {
+    width: 35%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.menu-left h3 {
+    margin-top: 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #888;
+}
+
+.menu-left a {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.menu-left a:hover {
+    color: #007bff;
+}
+
+.menu-right {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.menu-right img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-right span {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    text-transform: uppercase;
+}
+
+
+.burger.active div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active div:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+
+
+.class-a img {
+    width: 100%;
+}
+
+.split-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.top {
+    z-index: 2;
+    clip-path: inset(0 0 100% 0);
+}
+
+
+.bottom {
+    z-index: 1;
+    clip-path: inset(0% 0 0 0);
+}
+
+
+.third {
+    z-index: 1;
+    clip-path: inset(100% 0 0 0);
+}
+
+.class-a {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.for img {
+    width: 100%;
+
+    transform: scale(0.3);
+
+}
+
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    z-index: 100;
+    color: white;
+}
+
+.logo a {
+    font-size: 2.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    position: absolute;
+    text-decoration: none;
+    left: 46%;
+
+}
+
+.menu,
+.store {
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+
+}
+
+
+.hero-2 {
+    margin: auto;
+    position: relative;
+    height: 100vh;
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.2s ease-in;
+
+}
+
+
+
+
+.video-bgg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transition: all 0.2s ease-in;
+}
+
+
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    margin-top: 100px;
+    font-size: 10rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.hero-content button {
+    padding: 15px 20px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 50px;
+    font-size: 10px;
+}
+
+.hero-content button:hover {
+    background: white;
+    color: black;
+}
+
+
+.salitaize {
+    font-size: 30px;
+}
+
+
+.hero-content-2 {
+    max-width: 800px;
+    padding: 20px;
+}
+
+
+
+.mid {
+    margin-top: 100px;
+    margin-left: 11%;
+}
+
+.mid-1 {
+    margin-top: 100px;
+    margin-left: 11%;
+}
+
+.box-bugatti {
+    max-width: 1500px;
+    height: 600px;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    transition: 0.4s;
+}
+
+.box-bugatti h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00ffcc;
+}
+
+.box-bugatti p {
+    margin: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 5px;
+}
+
+
+
+
+.specs {
+    max-width: 1500px;
+    margin: auto;
+    background: #1a1a1a;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(255, 0, 85, 0.4);
+}
+
+.specs h2 {
+
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+}
+
+.specs table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.specs th,
+.specs td {
+    text-align: left;
+    padding: 10px 15px;
+    border-bottom: 1px solid #333;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.footer {
+    margin-top: 120px;
+    background: #111111;
+    color: white;
+    padding: 60px 10%;
+    font-family: sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 200px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.footer h4 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: gray;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #888;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    clip-path: inset(100% 0 0 0);
+    transition: clip-path 1s ease;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    top: 1%;
+    transform: translateY(-50%);
+}
+
+
+.hero.active .video-bg {
+    clip-path: inset(0 0 100% 0);
+}
+
+.bolid-bugatti,
+img {
+    margin-top: 100px;
+    margin-left: 12%;
+}
+
+
+@media (max-width: 576px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .logo a {
+        font-size: 1.2rem;
+        left: 45%;
+    }
+
+    .burger {
+        top: 15px;
+        left: 15px;
+        width: 25px;
+        height: 20px;
+    }
+
+    .burger div {
+        height: 3px;
+    }
+
+    .menu {
+        width: 80%;
+        height: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 4rem;
+        margin-top: 50px;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .hero-content button {
+        font-size: 8px;
+        padding: 10px 15px;
+    }
+
+    .box-bugatti {
+        max-width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .specs {
+        padding: 15px;
+    }
+
+    .bolid-bugatti, img{
+        width: 456px;
+    }
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUGATTI</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+
+</head>
+
+
+
+<body>
+    <div class="burger" id="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </div>
+
+    <div class="menu" id="menu">
+        <div class="menu-left">
+            <h3>Hyper Sports Cars</h3>
+            <a href="#">Current Models</a>
+            <a href="#">Contemporary Models</a>
+            <a href="#">Classic Icons</a>
+            <a href="#">Individualization</a>
+
+            <h3>La Marque</h3>
+            <a href="#">Company</a>
+            <a href="#">Careers</a>
+            <a href="#">Newsroom</a>
+
+            <h3>Ownership</h3>
+            <a href="#">Dealer Finder</a>
+            <a href="#">Customer Service</a>
+            <a href="#">La Maison Pur Sang</a>
+
+            <h3>Lifestyle</h3>
+            <a href="#">Collections</a>
+            <a href="#">Bugatti Store</a>
+        </div>
+        <div class="menu-right">
+            <div style="position:relative;">
+                <a href="../Tourbollion-bugatti/index.html"><img src="../1-2.jpeg" alt="Tourbillon"></a>
+
+            </div>
+            <div style="position:relative;">
+                <a href="../mistral/index.html"><img src="../1-1.jpeg" alt="W16 Mistral"></a>
+
+            </div>
+            <div style="position:relative;">
+                <a href="../bolid/index.html"><img src="../1-0.jpeg" alt="La Voiture Noire"></a>
+
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="logo"><a href="../index.html">BUGATTI</a></div>
+        <div class="store">STORE </div>
+    </header>
+
+
+    <section class="hero">
+        <video autoplay muted loop class="video-bgg" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+            data-aos-delay="300" data-aos-offset="0">
+            <source src="./BUGATTI BOLIDE MEETS CIRCUIT OF THE AMERICAS_ A customer's first track experienc.mp4"
+                type="video/mp4">
+        </video>
+        <div class="hero-content" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="900"
+            data-aos-offset="0">
+            <h1>BOLIDE
+            </h1>
+            <p>Le Pur Sang Des Automobiles</p>
+
+        </div>
+    </section>
+
+    <section class="hero">
+        <video autoplay muted loop class="video-bg">
+            <source src="./BUGATTI BOLIDE_ Public Debut at 24 Hours of Le Mans Centenary.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+        </div>
+    </section>
+    <section class="hero">
+        <video autoplay muted loop class="video-bg">
+            <source src="./BUGATTI BOLIDE MEETS CIRCUIT OF THE AMERICAS_ A customer's first track experienc.mp4"
+                type="video/mp4">
+        </video>
+        <div class="hero-content">
+        </div>
+    </section>
+    <section class="hero">
+        <video autoplay muted loop class="video-bg">
+            <source src="./BUGATTI BOLIDE_ Water Testing at Imola Circuit.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+        </div>
+    </section>
+
+
+
+    <section bolid-bugatti data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+            data-aos-delay="300" data-aos-offset="0" >
+        <img src="./1-1.jpeg" alt=""  >
+        <img src="./2-2.jpeg" alt="">
+        <img src="./3-3.jpeg" alt="">
+        <img src="./4-4.jpeg" alt="">
+        <img src="./5-5.jpeg" alt="">
+        <img src="./6-6.jpeg" alt="">
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-col">
+                <h4>HYPER SPORTS CARS</h4>
+                <a href="#">TOURBILLON</a>
+                <a href="#">CHIRON</a>
+                <a href="#">LA VOITURE NOIRE</a>
+                <a href="#">DIVO</a>
+                <a href="#">CENTODIECL</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>LA MARQUE</h4>
+                <a href="#">Discover BUGATTI</a>
+                <a href="#">Careers</a>
+                <a href="#">Newsroom</a>
+                <a href="#">Racing Legend</a>
+                <a href="#">Les Patrons</a>
+                <a href="#">La Maison Pur Sang</a>
+                <a href="#">Sur Mesure</a>
+
+            </div>
+
+            <div class="footer-col">
+                <h4>MODELS</h4>
+                <a href="#">Chiron</a>
+                <a href="#">Mistral</a>
+                <a href="#">Bolide</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>SOCIAL</h4>
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+                <a href="#">Facebook</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true
+        });
+    </script>
+    <script>
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
+
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            menu.classList.toggle('active');
+        });
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.utils.toArray(".hero").forEach((section) => {
+            const video = section.querySelector("video");
+
+            gsap.to(video, {
+                clipPath: "inset(0% 0 0 0)",
+                ease: "power1.out",
+                scrollTrigger: {
+                    trigger: section,
+                    start: "top 10%",
+                    end: "bottom 100%",
+                    scrub: true
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+</body>
